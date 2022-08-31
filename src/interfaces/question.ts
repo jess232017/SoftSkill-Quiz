@@ -1,8 +1,15 @@
+export interface IAnswer {
+  id: number | string;
+  texto: string;
+  descripcion?: string;
+  esCorrecto?: boolean;
+}
+
 export interface IQuestion {
-  id: string;
+  id: number | string;
   titulo: string;
-  respuestas: string[];
-  correcta: number;
+  respuestas: IAnswer[];
+  correcta?: number;
 }
 
 export interface IQuestions {

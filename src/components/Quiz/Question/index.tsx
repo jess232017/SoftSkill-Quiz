@@ -3,21 +3,21 @@ import { UseFormRegister, useWatch, FieldValues, Control } from 'react-hook-form
 import { IQuestion } from '../../../interfaces/question'
 
 interface IQuestionProps {
+  grid?: boolean;
   pos: number;
   question: IQuestion;
   register: UseFormRegister<FieldValues>;
   control: Control<FieldValues, any> | undefined;
 }
 
-const index: React.FC<IQuestionProps> = ({ pos, question, register, control }) => {
+const index: React.FC<IQuestionProps> = ({ pos, question, register, control, grid = false }) => {
   const selected = useWatch({ name: `answer-${question.id}`, control })
-  console.log('selected', selected)
 
   return (
     <fieldset className='lg:w-1/2 flex flex-col flex-1 gap-4 bg-white p-5 pb-8 rounded'>
       <h6 className='text-blue-500 font-bold'>Pregunta {pos + 1}</h6>
       <h5 className='font-black text-gray-800 text-xl'>{question.titulo}</h5>
-      <div className='flex flex-col gap-2'>
+      <div className={`${grid ? 'grid grid-cols-3' : 'flex flex-col'} gap-2`}>
         {question.respuestas.map((respuesta, index) => (
           <div
             className={`flex mt-3 items-center border-2 ${
@@ -36,8 +36,8 @@ const index: React.FC<IQuestionProps> = ({ pos, question, register, control }) =
                 {String.fromCharCode(65 + index)}
               </span>
               <div>
-                <p className='text-base leading-tight font-medium text-gray-800'>{respuesta}</p>
-                <p className='text-xs font-normal text-gray-500'>Descripcion si existe</p>
+                <p className='text-base leading-tight font-medium text-gray-800'>{respuesta.texto}</p>
+                {respuesta?.descripcion && <p className='text-xs font-normal text-gray-500'>{respuesta.descripcion}</p>}
               </div>
             </label>
           </div>

@@ -2,44 +2,124 @@
   "preguntas": [
     {
       "id": "1",
-      "titulo": "¿Qué es una clase?",
+      "titulo": "¿Actuo con paciencia, serenidad y autonomía?",
       "respuestas": [
-        "Una clase es una agrupación de alumnos que se encuentran en un mismo aula",
-        "Una clase es una agrupación de alumnos que se encuentran en un mismo aula",
-        "Una clase es una agrupación de alumnos que se encuentran en un mismo aula",
-        "Una clase es una agrupación de alumnos que se encuentran en un mismo aula"
-      ],
-      "correcta": 2
+        {
+          "id": "1",
+          "texto": "Nunca",
+          "valor": "1"
+        },
+        {
+          "id": "2",
+          "texto": "Casi nunca",
+          "valor": "2"
+        },
+        {
+          "id": "3",
+          "texto": "A veces",
+          "valor": "3"
+        },
+        {
+          "id": "4",
+          "texto": "Casi siempre",
+          "valor": "4"
+        },
+        {
+          "id": "5",
+          "texto": "Siempre",
+          "valor": "5"
+        }
+      ]
     },{
       "id": "2",
-      "titulo": "¿Qué es una base de datos?",
+      "titulo": "¿CREO QUE DECIDO EN FORMA IMPULSIVA, DEJANDOME LLEVAR POR MI INSTINTO.?",
       "respuestas": [
-        "Es una colección de datos",
-        "Es una colección de datos",
-        "Es una colección de datos",
-        "Es una colección de datos"
-      ],
-      "correcta": 1
+        {
+          "id": "1",
+          "texto": "Nunca",
+          "valor": "5"
+        },
+        {
+          "id": "2",
+          "texto": "Casi nunca",
+          "valor": "4"
+        },
+        {
+          "id": "3",
+          "texto": "A veces",
+          "valor": "3"
+        },
+        {
+          "id": "4",
+          "texto": "Casi siempre",
+          "valor": "2"
+        },
+        {
+          "id": "5",
+          "texto": "Siempre",
+          "valor": "1"
+        }
+      ]
     },{
       "id": "3",
-      "titulo": "¿Qué es una base de datos?",
+      "titulo": "¿LAS PERSONAS ENTIENDEN FACILMENTE LO QUE QUIERO DECIRLES?",
       "respuestas": [
-        "Es una colección de datos",
-        "Es una colección de datos",
-        "Es una colección de datos",
-        "Es una colección de datos"
-      ],
-      "correcta": 0
+        {
+          "id": "1",
+          "texto": "Nunca",
+          "valor": "1"
+        },
+        {
+          "id": "2",
+          "texto": "Casi nunca",
+          "valor": "2"
+        },
+        {
+          "id": "3",
+          "texto": "A veces",
+          "valor": "3"
+        },
+        {
+          "id": "4",
+          "texto": "Casi siempre",
+          "valor": "4"
+        },
+        {
+          "id": "5",
+          "texto": "Siempre",
+          "valor": "5"
+        }
+      ]
     },{
       "id": "4",
-      "titulo": "¿Qué es una herencia?",
+      "titulo": "¿SUELO EVITAR ENFRENTARME A SITUACIONES DIFICILES?",
       "respuestas": [
-        "Es una clase que hereda de otra clase",
-        "Es una clase que hereda de otra clase",
-        "Es una clase que hereda de otra clase",
-        "Es una clase que hereda de otra clase"
-      ],
-      "correcta": 3
+        {
+          "id": "1",
+          "texto": "Nunca",
+          "valor": "1"
+        },
+        {
+          "id": "2",
+          "texto": "Casi nunca",
+          "valor": "2"
+        },
+        {
+          "id": "3",
+          "texto": "A veces",
+          "valor": "3"
+        },
+        {
+          "id": "4",
+          "texto": "Casi siempre",
+          "valor": "4"
+        },
+        {
+          "id": "5",
+          "texto": "Siempre",
+          "valor": "5"
+        }
+      ]
     }
   ]
 }
