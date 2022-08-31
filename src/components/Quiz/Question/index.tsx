@@ -1,54 +1,49 @@
-interface Props {}
+import { UseFormRegister, useWatch, FieldValues, Control } from 'react-hook-form'
 
-const index: React.FC<Props> = () => {
+import { IQuestion } from '../../../interfaces/question'
+
+interface IQuestionProps {
+  pos: number;
+  question: IQuestion;
+  register: UseFormRegister<FieldValues>;
+  control: Control<FieldValues, any> | undefined;
+}
+
+const index: React.FC<IQuestionProps> = ({ pos, question, register, control }) => {
+  const selected = useWatch({ name: `answer-${question.id}`, control })
+  console.log('selected', selected)
+
   return (
-    <div className='flex items-center justify-center'>
-      <div className='w-2/5 flex flex-col gap-2 '>
-        <div className='flex gap-8 bg-gray-100 p-5 rounded'>
-          <p>Pregunta - 3</p>
-          <div>
-            <h3 className='font-black text-gray-800 text-xl'>Pregunta?</h3>
-            <div className='flex flex-col gap-2 mt-4'>
-              {Array(4)
-                .fill(0)
-                .map((_, index) => (
-                  <div className='flex'>
-                    <div className='flex items-center h-5'>
-                      <input
-                        id='helper-radio'
-                        aria-describedby='helper-radio-text'
-                        type='radio'
-                        defaultValue=''
-                        className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2'
-                      />
-                    </div>
-                    <div className='ml-2 text-sm'>
-                      <label htmlFor='helper-radio' className='font-medium text-gray-900'>
-                        Respuesta {index + 1}
-                      </label>
-                      <p id='helper-radio-text' className='text-xs font-normal text-gray-500'>
-                        Descripcion si existe
-                      </p>
-                    </div>
-                  </div>
-                ))}
-            </div>
+    <fieldset className='lg:w-1/2 flex flex-col flex-1 gap-4 bg-white p-5 pb-8 rounded'>
+      <h6 className='text-blue-500 font-bold'>Pregunta {pos + 1}</h6>
+      <h5 className='font-black text-gray-800 text-xl'>{question.titulo}</h5>
+      <div className='flex flex-col gap-2'>
+        {question.respuestas.map((respuesta, index) => (
+          <div
+            className={`flex mt-3 items-center border-2 ${
+              selected === index.toString() ? 'border-[#05f]' : 'border-[#e8f1fa]'
+            } bg-[#e8f1fa] rounded-lg text-xs font-semibold text-gray-700 `}
+            key={index}>
+            <input
+              type='radio'
+              value={index}
+              id={`answer-${question.id}-${index}`}
+              className='appearance-none w-0 h-0'
+              {...register(`answer-${question.id}`, { valueAsNumber: true, required: true })}></input>
+
+            <label className='flex-1 flex items-center p-2 cursor-pointer' htmlFor={`answer-${question.id}-${index}`}>
+              <span className='pt-2 pb-2 pl-3 pr-3 mr-4 inline-block rounded-lg bg-blue-700 text-white text-xs font-semibold'>
+                {String.fromCharCode(65 + index)}
+              </span>
+              <div>
+                <p className='text-base leading-tight font-medium text-gray-800'>{respuesta}</p>
+                <p className='text-xs font-normal text-gray-500'>Descripcion si existe</p>
+              </div>
+            </label>
           </div>
-        </div>
-        <div className='flex justify-between bg-gray-100 rounded p-2'>
-          <button
-            type='button'
-            className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'>
-            Anterior
-          </button>
-          <button
-            type='button'
-            className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'>
-            Siguiente
-          </button>
-        </div>
+        ))}
       </div>
-    </div>
+    </fieldset>
   )
 }
 

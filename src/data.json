@@ -1,0 +1,45 @@
+{
+  "preguntas": [
+    {
+      "id": "1",
+      "titulo": "¿Qué es una clase?",
+      "respuestas": [
+        "Una clase es una agrupación de alumnos que se encuentran en un mismo aula",
+        "Una clase es una agrupación de alumnos que se encuentran en un mismo aula",
+        "Una clase es una agrupación de alumnos que se encuentran en un mismo aula",
+        "Una clase es una agrupación de alumnos que se encuentran en un mismo aula"
+      ],
+      "correcta": 2
+    },{
+      "id": "2",
+      "titulo": "¿Qué es una base de datos?",
+      "respuestas": [
+        "Es una colección de datos",
+        "Es una colección de datos",
+        "Es una colección de datos",
+        "Es una colección de datos"
+      ],
+      "correcta": 1
+    },{
+      "id": "3",
+      "titulo": "¿Qué es una base de datos?",
+      "respuestas": [
+        "Es una colección de datos",
+        "Es una colección de datos",
+        "Es una colección de datos",
+        "Es una colección de datos"
+      ],
+      "correcta": 0
+    },{
+      "id": "4",
+      "titulo": "¿Qué es una herencia?",
+      "respuestas": [
+        "Es una clase que hereda de otra clase",
+        "Es una clase que hereda de otra clase",
+        "Es una clase que hereda de otra clase",
+        "Es una clase que hereda de otra clase"
+      ],
+      "correcta": 3
+    }
+  ]
+}
