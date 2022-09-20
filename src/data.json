@@ -3,6 +3,7 @@
     {
       "id": "1",
       "titulo": "¿Actuo con paciencia, serenidad y autonomía?",
+      "dimension": "L",
       "respuestas": [
         {
           "id": "1",
@@ -33,6 +34,7 @@
     },{
       "id": "2",
       "titulo": "¿CREO QUE DECIDO EN FORMA IMPULSIVA, DEJANDOME LLEVAR POR MI INSTINTO.?",
+      "dimension": "TD",
       "respuestas": [
         {
           "id": "1",
@@ -63,6 +65,7 @@
     },{
       "id": "3",
       "titulo": "¿LAS PERSONAS ENTIENDEN FACILMENTE LO QUE QUIERO DECIRLES?",
+      "dimension": "C",
       "respuestas": [
         {
           "id": "1",
@@ -93,6 +96,7 @@
     },{
       "id": "4",
       "titulo": "¿SUELO EVITAR ENFRENTARME A SITUACIONES DIFICILES?",
+      "dimension": "MC",
       "respuestas": [
         {
           "id": "1",
