@@ -1,0 +1,364 @@
+{
+  "scores" : [
+    {
+      "id": 1,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 2,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 3,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 4,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 5,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 6,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 7,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 8,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 9,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 10,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 11,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 12,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 13,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 14,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 15,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 16,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 17,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 18,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Nunca",
+      "5": "Casi nunca"
+    },
+    {
+      "id": 19,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 20,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 21,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 22,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 23,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 24,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 25,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 26,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "A veces",
+      "4": "Casi nunca",
+      "5": "Nunca"
+    },
+    {
+      "id": 27,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 28,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 29,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "Casi nunca",
+      "4": "A veces",
+      "5": "Nunca"
+    },
+    {
+      "id": 30,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "Casi nunca",
+      "4": "A veces",
+      "5": "Nunca"
+    },
+    {
+      "id": 31,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "Casi nunca",
+      "4": "A veces",
+      "5": "Nunca"
+    },
+    {
+      "id": 32,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 33,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 34,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "Casi nunca",
+      "4": "A veces",
+      "5": "Nunca"
+    },
+    {
+      "id": 35,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "Casi nunca",
+      "4": "A veces",
+      "5": "Nunca"
+    },
+    {
+      "id": 36,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 37,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "Casi nunca",
+      "4": "A veces",
+      "5": "Nunca"
+    },
+    {
+      "id": 38,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "Casi nunca",
+      "4": "A veces",
+      "5": "Nunca"
+    },
+    {
+      "id": 39,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 40,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "Casi nunca",
+      "4": "A veces",
+      "5": "Nunca"
+    },
+    {
+      "id": 41,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 42,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 43,
+      "1": "Siempre",
+      "2": "Casi siempre",
+      "3": "Casi nunca",
+      "4": "A veces",
+      "5": "Nunca"
+    },
+    {
+      "id": 44,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    },
+    {
+      "id": 45,
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Casi siempre",
+      "5": "Siempre"
+    }
+  ]
+}

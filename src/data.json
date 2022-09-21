@@ -1,129 +1,1444 @@
 {
   "preguntas": [
     {
-      "id": "1",
-      "titulo": "¿Actuo con paciencia, serenidad y autonomía?",
-      "dimension": "L",
-      "respuestas": [
-        {
-          "id": "1",
-          "texto": "Nunca",
-          "valor": "1"
-        },
-        {
-          "id": "2",
-          "texto": "Casi nunca",
-          "valor": "2"
-        },
-        {
-          "id": "3",
-          "texto": "A veces",
-          "valor": "3"
-        },
-        {
-          "id": "4",
-          "texto": "Casi siempre",
-          "valor": "4"
-        },
-        {
-          "id": "5",
-          "texto": "Siempre",
-          "valor": "5"
-        }
-      ]
-    },{
-      "id": "2",
-      "titulo": "¿CREO QUE DECIDO EN FORMA IMPULSIVA, DEJANDOME LLEVAR POR MI INSTINTO.?",
-      "dimension": "TD",
-      "respuestas": [
-        {
-          "id": "1",
-          "texto": "Nunca",
-          "valor": "5"
-        },
-        {
-          "id": "2",
-          "texto": "Casi nunca",
-          "valor": "4"
-        },
-        {
-          "id": "3",
-          "texto": "A veces",
-          "valor": "3"
-        },
-        {
-          "id": "4",
-          "texto": "Casi siempre",
-          "valor": "2"
-        },
-        {
-          "id": "5",
-          "texto": "Siempre",
-          "valor": "1"
-        }
-      ]
-    },{
-      "id": "3",
-      "titulo": "¿LAS PERSONAS ENTIENDEN FACILMENTE LO QUE QUIERO DECIRLES?",
-      "dimension": "C",
-      "respuestas": [
-        {
-          "id": "1",
-          "texto": "Nunca",
-          "valor": "1"
-        },
-        {
-          "id": "2",
-          "texto": "Casi nunca",
-          "valor": "2"
-        },
-        {
-          "id": "3",
-          "texto": "A veces",
-          "valor": "3"
-        },
-        {
-          "id": "4",
-          "texto": "Casi siempre",
-          "valor": "4"
-        },
-        {
-          "id": "5",
-          "texto": "Siempre",
-          "valor": "5"
-        }
-      ]
-    },{
-      "id": "4",
-      "titulo": "¿SUELO EVITAR ENFRENTARME A SITUACIONES DIFICILES?",
-      "dimension": "MC",
-      "respuestas": [
-        {
-          "id": "1",
-          "texto": "Nunca",
-          "valor": "1"
-        },
-        {
-          "id": "2",
-          "texto": "Casi nunca",
-          "valor": "2"
-        },
-        {
-          "id": "3",
-          "texto": "A veces",
-          "valor": "3"
-        },
-        {
-          "id": "4",
-          "texto": "Casi siempre",
-          "valor": "4"
-        },
-        {
-          "id": "5",
-          "texto": "Siempre",
-          "valor": "5"
-        }
-      ]
+        "id": "1",
+        "titulo": "¿Actuo con paciencia, serenidad y autonomía?",
+        "dimension": "L",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "titulo": "¿Creo que decido en forma impulsiva, dejandome llevar por mi instinto.?",
+        "dimension": "TD",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "titulo": "¿Las personas entienden facilmente lo que quiero decirles?",
+        "dimension": "C",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "titulo": "¿Suelo evitar enfrentarme a situaciones dificiles?",
+        "dimension": "MC",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "titulo": "¿Creo que tengo subalternos que podrían hacer las cosas tan bien como yo?",
+        "dimension": "D",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "titulo": "¿Mi equipo de trabajo esta integrado y trabaja con interes?",
+        "dimension": "M y D",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "titulo": "¿El tiempo me alcanza para lo que debo hacer?",
+        "dimension": "MT",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "titulo": "¿Me siento nervioso e inseguro cuando tengo que dirigir un grupo?",
+        "dimension": "DG",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "titulo": "¿Reflexiono constantemente sobre el futuro de mi empresa en el largo plazo?",
+        "dimension": "PE",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "titulo": "¿Tengo que reconsiderar y echar para atrás las ordenes que he dado",
+        "dimension": "L",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "titulo": "¿Mis instrucciones son malinterpretadas?",
+        "dimension": "TD",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "titulo": "¿Creo que mis empleados critican la forma como los dirijo?",
+        "dimension": "C",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "titulo": "¿Prefiero sacrificar mis puntos de vista para evitar confrontaciones?",
+        "dimension": "MC",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "titulo": "¿Si no hago personalmente las cosas, estas quedan mal",
+        "dimension": "D",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "titulo": "¿Analizo conjuntamente con mis subalternos su actuacion en el trabajo?",
+        "dimension": "M y D",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "titulo": "¿Invierto mucho tiempo en reuniones improductivas?",
+        "dimension": "MT",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "titulo": "¿Me es dificil comprender los fenomenos que estan ocurriendo dentro de los grupos de trabajo?",
+        "dimension": "DG",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "titulo": "¿Evito invertir tiempo en planificar acciones al largo plazo?",
+        "dimension": "PE",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 4
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 5
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "titulo": "¿La forma como dirijo al personal funciona bien con todos?",
+        "dimension": "L",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "titulo": "¿Consulto la opinion de otros antes de tomar una decision importante?",
+        "dimension": "TD",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "titulo": "¿La informacion me llega mas como \"chisme\" o rumores?",
+        "dimension": "C",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "titulo": "¿Me angustio cuando tengo que manejar conflictos en mi area",
+        "dimension": "MC",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "titulo": "¿Pongo atencion personal a todos los detalles de la operación de mi area?",
+        "dimension": "D",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "titulo": "¿Detecto facilmente las necesidades de capacitacion y desarrollo de mi gente?",
+        "dimension": "M y D",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "titulo": "¿Al finalizar cada dia tengo la sensacion de que estuve muy ocupado pero no se exactamente en que?",
+        "dimension": "MT",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "titulo": "¿Prefiero manejar los asuntos en forma individual con cada empleado que reunirnos en grupo?",
+        "dimension": "DG",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 4
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "titulo": "¿Me gusta sentarme a generar ideas y formular metodos de trabajo con mis trabajadores?",
+        "dimension": "PE",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "titulo": "¿Logro que las personas hagan lo que deseo según mis instrucciones?",
+        "dimension": "L",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "titulo": "¿Siento que me dejo presionar por los demas al tomar las decisiones?",
+        "dimension": "TD",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 3
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 4
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "30",
+        "titulo": "¿Mis colaboradores tienen dificultades para comunicarme sus problemas de trabajo?",
+        "dimension": "C",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 3
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 4
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "31",
+        "titulo": "¿Temo quedar mal con alguna de las partes cuando debo mediar algun conflicto?",
+        "dimension": "MC",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 3
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 4
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "32",
+        "titulo": "¿Cuando me ausento existe claridad sobre quien me esta reemplazando?",
+        "dimension": "D",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "33",
+        "titulo": "¿Establezco estrategias para mejorar el desempeño en el trabajo de mis colaboradores?",
+        "dimension": "M y D",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "34",
+        "titulo": "¿Tengo sentimientos de culpa por no dedicar suficiente tiempo a mi familia y a mi mismo",
+        "dimension": "MT",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 3
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 4
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "35",
+        "titulo": "¿Cuando dirijo reuniones tengo la sensación que no ha sido tan productiva como esperaba",
+        "dimension": "DG",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 3
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 4
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "36",
+        "titulo": "¿Leo y analizo documentos y articulos relacionados con mi sector y evaluo posibilidades de acción?",
+        "dimension": "PE",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "37",
+        "titulo": "¿Tengo la sensacion de que las personas desconocen mi autoridad?",
+        "dimension": "L",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 3
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 4
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "38",
+        "titulo": "¿Me demoro demasiado al tomar una decision?",
+        "dimension": "TD",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 3
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 4
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "39",
+        "titulo": "¿Las personas tienen la oportunidad de discutir conmigo ordenes e instrucciones?",
+        "dimension": "C",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "40",
+        "titulo": "¿Siento que me involucro en muchos conflictos?",
+        "dimension": "MC",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 3
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 4
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "41",
+        "titulo": "¿Creo que los demas son tan capaces como yo?",
+        "dimension": "D",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "42",
+        "titulo": "¿Suelo reconocer a mi gente el trabajo bien hecho?",
+        "dimension": "M y D",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "43",
+        "titulo": "¿Acostumbro llevarme trabajo para hacer en casa?",
+        "dimension": "MT",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 5
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 3
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 4
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 2
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 1
+            }
+        ]
+    },
+    {
+        "id": "44",
+        "titulo": "¿Controlo bien las reuniones y logro que se me cumplan los objetivos propuestos para ella?",
+        "dimension": "DG",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
+    },
+    {
+        "id": "45",
+        "titulo": "¿Las personas en general y mis compañeros de trabajo me ven como un visionario?",
+        "dimension": "PE",
+        "respuestas": [
+            {
+                "id": "1",
+                "texto": "Nunca",
+                "valor": 1
+            },
+            {
+                "id": "2",
+                "texto": "Casi nunca",
+                "valor": 2
+            },
+            {
+                "id": "3",
+                "texto": "A veces",
+                "valor": 3
+            },
+            {
+                "id": "4",
+                "texto": "Casi siempre",
+                "valor": 4
+            },
+            {
+                "id": "5",
+                "texto": "Siempre",
+                "valor": 5
+            }
+        ]
     }
-  ]
+]
 }

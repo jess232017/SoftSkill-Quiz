@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { useForm, useWatch, Controller, FormProvider } from 'react-hook-form'
+import { useForm, useWatch, FormProvider } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 
 import Question from 'components/Quiz/Question'
