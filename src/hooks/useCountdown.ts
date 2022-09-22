@@ -19,19 +19,24 @@ const useCountDown = (timeToCount = 60 * 1000, interval = 1000) => {
     }
 
     const localInterval = Math.min(interval, timer.current.timeLeft || Infinity)
-    if (ts - timer.current.lastInterval >= localInterval) {
-      timer.current.lastInterval += localInterval
-      setTimeLeft((timeLeft) => {
-        timer.current.timeLeft = timeLeft - localInterval
-        return timer.current.timeLeft
-      })
+
+    if(timer.current.lastInterval){
+      if (ts - timer.current.lastInterval >= localInterval) {
+        timer.current.lastInterval += localInterval
+        setTimeLeft((timeLeft) => {
+          timer.current.timeLeft = timeLeft - localInterval
+          return timer.current.timeLeft
+        })
+      }
     }
 
-    if (ts - timer.current.started < timer.current.timeToCount) {
-      timer.current.requestId = window.requestAnimationFrame(run)
-    } else {
-      timer.current = {}
-      setTimeLeft(0)
+    if (timer.current.started && timer.current.timeToCount) {
+      if (ts - timer.current.started < timer.current.timeToCount) {
+        timer.current.requestId = window.requestAnimationFrame(run)
+      } else {
+        timer.current = {}
+        setTimeLeft(0)
+      }
     }
   }
 
