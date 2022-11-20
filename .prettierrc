@@ -9,6 +9,6 @@
   "singleQuote": true,
   "trailingComma": "all",
   "endOfLine": "auto",
-  "parser": "flow",
+  "parser": "typescript",
   "arrowParens": "always"
 }
