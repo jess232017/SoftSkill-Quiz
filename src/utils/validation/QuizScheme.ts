@@ -1,11 +1,11 @@
 import * as yup from 'yup'
 
 export interface IAnswer {
-  answer: string | number;
+  answer: string | number
 }
 
 export interface IQuizScheme {
-  answers: IAnswer[];
+  answers: IAnswer[]
 }
 
 export const QuizScheme: yup.SchemaOf<IQuizScheme> = yup

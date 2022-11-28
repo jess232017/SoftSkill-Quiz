@@ -8,7 +8,7 @@ import Question from 'components/Quiz/Question'
 import CounterDown from 'components/Quiz/CounterDown'
 
 import data from '../../data.json'
-import { triggerRequest } from 'utils/tools/message'
+import { triggerWarning } from 'utils/tools/message'
 import QuizScheme, { IQuizScheme } from '../../utils/validation/QuizScheme'
 import { IAnswer } from '../../utils/validation/QuizScheme'
 
@@ -17,7 +17,9 @@ const startedDate = new Date()
 const Quiz = () => {
   const navigate = useNavigate()
 
-  const { handleSubmit, control, register, setFocus } = useForm<IQuizScheme>({ resolver: yupResolver(QuizScheme) })
+  const { handleSubmit, control, register, setFocus, getValues } = useForm<IQuizScheme>({
+    resolver: yupResolver(QuizScheme),
+  })
   const dt = useWatch({ control, name: 'answers' })
   const { errors } = useFormState({ control })
 
@@ -28,8 +30,14 @@ const Quiz = () => {
     navigate('result', { state: { data, startedDate } })
   }
 
+  const onTimeCompleted = () => {
+    triggerWarning('El tiempo para responder las preguntas ha terminado.', 'Lo sentimos!')
+    const data: IQuizScheme = { answers: getValues('answers') }
+    navigate('result', { state: { data, startedDate } })
+  }
+
   const handleBack = () => {
-    triggerRequest('No se puede retroceder', 'error')
+    triggerWarning('No se puede retroceder', 'error')
   }
 
   const handleFocus = (index: number) => {
@@ -54,7 +62,7 @@ const Quiz = () => {
           <div className='flex justify-between'>
             <h1>Formulario</h1>
             <span>
-              Tiempo restante: <CounterDown minutes={50} seconds={0} format='hh:mm:ss' />
+              Tiempo restante: <CounterDown minutes={45} seconds={0} format='mm:ss' onCompleted={onTimeCompleted} />
             </span>
           </div>
           <div className='mb-4 h-1.5 w-full rounded-full bg-gray-200 dark:bg-gray-700'>
