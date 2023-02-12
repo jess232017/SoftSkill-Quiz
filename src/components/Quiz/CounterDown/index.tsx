@@ -2,11 +2,11 @@ import { FC } from 'react'
 import useCountdown from '@bradgarropy/use-countdown'
 
 interface ICounterDownProps {
-  minutes: number;
-  seconds: number;
-  className?: string;
-  format: 'hh:mm:ss' | 'mm:ss' | 'ss';
-  onCompleted?: () => void;
+  minutes: number
+  seconds: number
+  className?: string
+  format: 'hh:mm:ss' | 'mm:ss' | 'ss'
+  onCompleted?: () => void
 }
 
 const CounterDown: FC<ICounterDownProps> = ({ minutes, seconds, format, onCompleted, className }) => {

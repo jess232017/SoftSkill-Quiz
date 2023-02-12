@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from 'pages/Home'
 import Quiz from 'pages/Quiz'
 import Result from 'pages/Result'
+import './style/index.css'
 
 function App() {
   return (

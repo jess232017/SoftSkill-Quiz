@@ -13,10 +13,8 @@ import {
   BarController,
 } from 'chart.js'
 import { Chart } from 'react-chartjs-2'
-import faker from 'faker'
 
 import questions from '../../data.json'
-import { IQuizScheme } from '../../utils/validation/QuizScheme'
 import { IQuestion } from '../../interfaces/question'
 
 ChartJS.register(
@@ -43,21 +41,24 @@ const labels = [
   'Pensamiento Estrategico',
 ]
 
-interface ILocationState {
-  data: IQuizScheme;
-}
-
 const dimensions = ['L', 'TD', 'C', 'MC', 'D', 'M y D', 'MT', 'DG', 'PE']
 
 interface IDimensionResult {
-  dimension: string;
-  score: number;
+  dimension: string
+  score: number
 }
+
+const finishDate = new Date()
 
 const Result = () => {
   const navigate = useNavigate()
   const location = useLocation()
-  const { data } = location.state //as ILocationState;
+  const { data, startedDate } = location.state //as ILocationState;
+
+  //calculate time difference between start and finish then convert to minutes and seconds
+  const timeDiff = Math.abs(finishDate.getTime() - startedDate.getTime())
+  const minutes = Math.floor((timeDiff / (1000 * 60)) % 60)
+  const seconds = Math.floor((timeDiff / 1000) % 60)
 
   const resultRaw: IQuestion[] = questions.preguntas.map((element, index) => {
     const result = element.respuestas.find((item) => item.id === data.answers[index].answer)
@@ -84,9 +85,6 @@ const Result = () => {
   })
 
   const score = results.reduce((acc, curr) => acc + curr, 0)
-  const time = '12:00'
-
-  //const results = labels.map(() => faker.datatype.number({ min: 1, max: 25 }))
 
   const dataGraph = {
     labels,
@@ -108,41 +106,42 @@ const Result = () => {
     ],
   }
 
-  console.log('resultRaw', resultRaw)
-  console.log('resultDimensions', resultDimensions)
-  console.log('results', results)
-  console.log('score', score)
-
   return (
     <div
-      className='w-screen min-h-screen overflow-hidden p-4 flex justify-center items-center
-    bg-black'>
-      <div className='w-full md:w-2/3 lg:w-2/3 p-8 bg-white flex flex-col justify-center items-center'>
+      className='flex min-h-screen w-screen items-center justify-center overflow-hidden bg-black
+    p-4'>
+      <div className='flex w-full flex-col items-center justify-center bg-white p-8 md:w-2/3 lg:w-2/3'>
         <div className='text-2xl font-bold'>Resultados</div>
-        <div className='w-full flex justify-between my-2'>
+        <div className='my-2 flex w-full justify-between'>
           <div className='text-xs font-bold'>Tu puntuación es de: {score}</div>
-          <div className='text-xs font-bold'>Tiempo utilizado: {time}</div>
+          <div className='text-xs font-bold'>
+            Tiempo utilizado: {minutes.toString().padStart(2, '0')}: {seconds.toString().padStart(2, '0')}
+          </div>
         </div>
-        <div className='w-full flex justify-between gap-4'>
+        <div className='flex w-full justify-between gap-4'>
           <div className='flex-1'>
             <Chart type='bar' data={dataGraph} />
           </div>
 
-          <table className='shadow-lg bg-white my-4'>
-            <tr>
-              <th className='bg-blue-100 border text-left px-4 py-1'>Habilidad</th>
-              <th className='bg-blue-100 border text-left px-4 py-1'>Puntaje</th>
-            </tr>
-            {resultDimensions.map((item) => (
+          <table className='my-4 bg-white shadow-lg'>
+            <thead>
               <tr>
-                <td className='border px-4 py-1'>{item.dimension}</td>
-                <td className='border px-4 py-1'>{item.score}</td>
+                <th className='border bg-blue-100 px-4 py-1 text-left'>Habilidad</th>
+                <th className='border bg-blue-100 px-4 py-1 text-left'>Puntaje</th>
               </tr>
-            ))}
+            </thead>
+            <tbody>
+              {resultDimensions.map((item, i) => (
+                <tr key={i}>
+                  <td className='border px-4 py-1'>{item.dimension}</td>
+                  <td className='border px-4 py-1'>{item.score}</td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
 
-        <button className='bg-blue-500 text-white px-4 py-2 rounded-md mt-4' onClick={() => navigate('/')}>
+        <button className='mt-4 rounded-md bg-blue-500 px-4 py-2 text-white' onClick={() => navigate('/')}>
           Ir al inicio
         </button>
       </div>
