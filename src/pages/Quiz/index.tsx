@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useForm, useWatch, useFormState } from 'react-hook-form'
 
@@ -12,14 +12,16 @@ import { triggerWarning } from 'utils/tools/message'
 import QuizScheme, { IQuizScheme } from '../../utils/validation/QuizScheme'
 import { IAnswer } from '../../utils/validation/QuizScheme'
 
-const startedDate = new Date()
-
 const Quiz = () => {
   const navigate = useNavigate()
+  const location = useLocation()
+  const { name } = location.state as { name: string }
 
   const { handleSubmit, control, register, setFocus, getValues } = useForm<IQuizScheme>({
     resolver: yupResolver(QuizScheme),
   })
+
+  const [startedDate] = useState(new Date())
   const dt = useWatch({ control, name: 'answers' })
   const { errors } = useFormState({ control })
 
@@ -27,13 +29,13 @@ const Quiz = () => {
   const questionsRef = useRef<Record<number, HTMLFieldSetElement | null>>({})
 
   const onSubmit = (data: IQuizScheme) => {
-    navigate('result', { state: { data, startedDate } })
+    navigate('result', { state: { data, startedDate, name } })
   }
 
   const onTimeCompleted = () => {
     triggerWarning('El tiempo para responder las preguntas ha terminado.', 'Lo sentimos!')
     const data: IQuizScheme = { answers: getValues('answers') }
-    navigate('result', { state: { data, startedDate } })
+    navigate('result', { state: { data, startedDate, name } })
   }
 
   const handleBack = () => {
@@ -57,16 +59,21 @@ const Quiz = () => {
 
   return (
     <div className='relative mx-auto rounded bg-gray-100 pt-20 shadow'>
-      <div className='fixed top-0 z-50 flex w-full justify-end bg-white px-2 shadow-sm'>
-        <div className='flex w-2/5 flex-col  justify-between rounded p-2'>
-          <div className='flex justify-between'>
-            <h1>Formulario</h1>
-            <span>
-              Tiempo restante: <CounterDown minutes={45} seconds={0} format='mm:ss' onCompleted={onTimeCompleted} />
-            </span>
-          </div>
-          <div className='mb-4 h-1.5 w-full rounded-full bg-gray-200 dark:bg-gray-700'>
-            <div className='h-1.5 rounded-full bg-blue-600 dark:bg-blue-500' style={{ width: `${counter}%` }}></div>
+      <div className='fixed top-0 z-50 flex w-full justify-center bg-white px-2 shadow-sm'>
+        <div className='flex w-full max-w-screen-xl items-center justify-between'>
+          <p>
+            Bienvenido <span className='font-bold'>{name.split(' ')[0] || 'Usuario'}</span>
+          </p>
+          <div className='flex w-2/5 flex-col  justify-between rounded p-2'>
+            <div className='flex justify-between'>
+              <h1>Formulario</h1>
+              <span>
+                Tiempo restante: <CounterDown minutes={45} seconds={0} format='mm:ss' onCompleted={onTimeCompleted} />
+              </span>
+            </div>
+            <div className='mb-4 h-1.5 w-full rounded-full bg-gray-200 dark:bg-gray-700'>
+              <div className='h-1.5 rounded-full bg-blue-600 dark:bg-blue-500' style={{ width: `${counter}%` }}></div>
+            </div>
           </div>
         </div>
       </div>

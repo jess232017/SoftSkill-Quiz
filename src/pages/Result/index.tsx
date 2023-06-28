@@ -1,3 +1,4 @@
+import { useState, useMemo } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import {
@@ -48,17 +49,20 @@ interface IDimensionResult {
   score: number
 }
 
-const finishDate = new Date()
-
 const Result = () => {
   const navigate = useNavigate()
   const location = useLocation()
-  const { data, startedDate } = location.state //as ILocationState;
+
+  const [finishDate] = useState(new Date())
+  const { data, startedDate, name } = location.state //as ILocationState;
 
   //calculate time difference between start and finish then convert to minutes and seconds
-  const timeDiff = Math.abs(finishDate.getTime() - startedDate.getTime())
-  const minutes = Math.floor((timeDiff / (1000 * 60)) % 60)
-  const seconds = Math.floor((timeDiff / 1000) % 60)
+  const timeResult = useMemo(() => {
+    const timeDiff = Math.abs(finishDate.getTime() - startedDate.getTime())
+    const minutes = Math.floor((timeDiff / (1000 * 60)) % 60)
+    const seconds = Math.floor((timeDiff / 1000) % 60)
+    return `${minutes} minutos y ${seconds} segundos`
+  }, [finishDate, startedDate])
 
   const resultRaw: IQuestion[] = questions.preguntas.map((element, index) => {
     const result = element.respuestas.find((item) => item.id === data.answers[index].answer)
@@ -106,19 +110,23 @@ const Result = () => {
     ],
   }
 
+  const printResult = () => {
+    window.print()
+  }
+
   return (
     <div
       className='flex min-h-screen w-screen items-center justify-center overflow-hidden bg-black
     p-4'>
       <div className='flex w-full flex-col items-center justify-center bg-white p-8 md:w-2/3 lg:w-2/3'>
-        <div className='text-2xl font-bold'>Resultados</div>
+        <h1 className='flex text-2xl font-bold print:mb-10'>
+          Resultados <span className='ml-2 hidden print:block'> de: {name}</span>
+        </h1>
         <div className='my-2 flex w-full justify-between'>
           <div className='text-xs font-bold'>Tu puntuación es de: {score}</div>
-          <div className='text-xs font-bold'>
-            Tiempo utilizado: {minutes.toString().padStart(2, '0')}: {seconds.toString().padStart(2, '0')}
-          </div>
+          <div className='text-xs font-bold'>Tiempo utilizado: {timeResult}</div>
         </div>
-        <div className='flex w-full justify-between gap-4'>
+        <div className='flex w-full justify-between gap-4 print:flex-col'>
           <div className='flex-1'>
             <Chart type='bar' data={dataGraph} />
           </div>
@@ -141,9 +149,17 @@ const Result = () => {
           </table>
         </div>
 
-        <button className='mt-4 rounded-md bg-blue-500 px-4 py-2 text-white' onClick={() => navigate('/')}>
-          Ir al inicio
-        </button>
+        <div className='flex w-full justify-center gap-4'>
+          <button
+            className='mt-4 rounded-md bg-gray-500 px-4 py-2 text-white print:hidden'
+            onClick={() => navigate('/')}>
+            Ir al inicio
+          </button>
+
+          <button className='mt-4 rounded-md bg-blue-500 px-4 py-2 text-white print:hidden' onClick={printResult}>
+            Imprimir Resultados
+          </button>
+        </div>
       </div>
     </div>
   )
