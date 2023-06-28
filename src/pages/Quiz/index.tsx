@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 
 import { useNavigate, useLocation } from 'react-router-dom'
-import { yupResolver } from '@hookform/resolvers/yup'
+import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm, useWatch, useFormState } from 'react-hook-form'
 
 import Question from 'components/Quiz/Question'
@@ -18,7 +18,7 @@ const Quiz = () => {
   const { name } = location.state as { name: string }
 
   const { handleSubmit, control, register, setFocus, getValues } = useForm<IQuizScheme>({
-    resolver: yupResolver(QuizScheme),
+    resolver: zodResolver(QuizScheme),
   })
 
   const [startedDate] = useState(new Date())

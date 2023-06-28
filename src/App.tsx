@@ -1,19 +1,23 @@
+import { Suspense, lazy } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 
 import Home from 'pages/Home'
-import Quiz from 'pages/Quiz'
-import Result from 'pages/Result'
 import './style/index.css'
+
+const Quiz = lazy(() => import('pages/Quiz'))
+const Result = lazy(() => import('pages/Result'))
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='form' element={<Quiz />} />
-        <Route path='form/result' element={<Result />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='form' element={<Quiz />} />
+          <Route path='form/result' element={<Result />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   )
 }
