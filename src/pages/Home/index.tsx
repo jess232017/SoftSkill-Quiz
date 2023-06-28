@@ -1,19 +1,21 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useForm } from 'react-hook-form'
+
+import { useForm, useFormState } from 'react-hook-form'
+
+interface IForm {
+  name: string
+}
 
 const Home = () => {
   const [message, setMessage] = useState('')
   const navigate = useNavigate()
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm()
+  const { register, handleSubmit, control } = useForm<IForm>()
+  const { errors } = useFormState({ control })
 
-  const onSubmit = (data: any) => {
-    navigate('/form')
+  const onSubmit = ({ name }: IForm) => {
+    navigate('/form', { state: { name } })
   }
 
   useEffect(() => {
